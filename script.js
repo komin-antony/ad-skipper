@@ -5,14 +5,14 @@ $(document).ready(function(){
     }, 1500);
 
     function closeBannerAd(){
-        var adDisplay = $('.adDisplay');
+        var adDisplay = $('.ytp-ad-image-overlay');
         if (adDisplay.length > 0) {
-            adDisplay.find('.close-padding').trigger('click');
+            adDisplay.find('.ytp-ad-overlay-close-button').trigger('click');
         }
     }
 
     function skipVideoAd(){
-        var videoAdUiSkipButton = $('.videoAdUiSkipButton');
+        var videoAdUiSkipButton = $('.ytp-ad-skip-button-slot');
         if (videoAdUiSkipButton.length > 0) {
             videoAdUiSkipButton.trigger('click');
         }
